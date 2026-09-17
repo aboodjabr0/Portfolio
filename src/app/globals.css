@@ -1,0 +1,171 @@
+@import "@xyflow/react/dist/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ink: #070b0e;
+  --color-section-blue-black: #091015;
+  --color-section-elevated: #0b1218;
+  --color-surface: #0f151a;
+  --color-surface-raised: #111920;
+  --color-muted: #8b9aaa;
+  --color-accent: #2f8cff;
+  --color-success: #22c785;
+  --color-line: rgba(255, 255, 255, 0.085);
+  --color-line-strong: rgba(255, 255, 255, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-ink);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--color-ink);
+  color: #f4f7fa;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.home-section-depth {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.home-section-depth > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-section-depth::before,
+.home-section-depth::after {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  content: "";
+  z-index: 0;
+}
+
+.home-section-selected {
+  background: linear-gradient(180deg, #080d11 0%, var(--color-section-blue-black) 48%, #080e13 100%);
+}
+
+.home-section-selected::before {
+  background: radial-gradient(circle at 78% 8%, rgba(47, 140, 255, 0.07), transparent 34%);
+}
+
+.home-section-engineering {
+  background: var(--color-section-elevated);
+}
+
+.home-section-engineering::after {
+  background: radial-gradient(ellipse at 52% 18%, rgba(47, 140, 255, 0.065), transparent 40%);
+}
+
+.home-section-experience {
+  background: var(--color-ink);
+}
+
+.home-section-experience::before {
+  background: radial-gradient(ellipse at 38% 10%, rgba(91, 132, 171, 0.055), transparent 35%);
+}
+
+.home-section-about {
+  background: linear-gradient(180deg, #080d12 0%, #091015 100%);
+}
+
+.home-section-about::before {
+  background: radial-gradient(ellipse at 105% 42%, rgba(47, 140, 255, 0.055), transparent 42%);
+}
+
+.home-section-cta {
+  background: var(--color-ink);
+}
+
+.home-section-contact {
+  background: linear-gradient(180deg, #080d12 0%, #091015 100%);
+}
+
+.home-section-contact::before {
+  background: radial-gradient(ellipse at 12% 18%, rgba(47, 140, 255, 0.04), transparent 35%);
+}
+
+.fluid-cursor-background {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  contain: strict;
+}
+
+@media (max-width: 767px) {
+  .fluid-cursor-background {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fluid-cursor-background {
+    display: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: rgba(47, 140, 255, 0.38);
+  color: #ffffff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes pulse-status {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 199, 133, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 4px rgba(34, 199, 133, 0);
+  }
+}
+
+.status-pulse {
+  animation: pulse-status 2.6s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
