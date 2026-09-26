@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
+import { publicPath } from "@/config/paths";
 
 export function HeroVisual() {
   const reduceMotion = useReducedMotion();
@@ -17,7 +18,7 @@ export function HeroVisual() {
       <div className="absolute inset-[10%] rounded-full bg-[#1e6db2]/10 blur-[70px] lg:-translate-y-1/2" />
       <div className="absolute inset-0 lg:-translate-y-1/2 [mask-image:radial-gradient(ellipse_at_center,black_54%,rgba(0,0,0,0.92)_72%,transparent_81%)]">
         <Image
-          src="/images/hero-earth.avif"
+          src={publicPath("/images/hero-earth.avif")}
           alt=""
           fill
           priority

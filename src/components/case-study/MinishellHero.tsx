@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight, Github } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { TechnologyTag } from "@/components/projects/TechnologyTag";
+import { publicPath } from "@/config/paths";
 
 const technologies = ["C", "Unix", "Processes", "Shell"];
 const builtIns = ["echo", "cd", "pwd", "export", "unset", "env", "exit"];
@@ -79,7 +80,7 @@ export function MinishellHero() {
         >
           <div className="relative aspect-[4/3] overflow-hidden rounded-[8px] border border-white/[0.1] bg-[#080f15] p-3 shadow-[0_20px_70px_rgba(0,0,0,0.22)] sm:p-5">
             <Image
-              src="/images/projects/minishell-cover.jpeg"
+              src={publicPath("/images/projects/minishell-cover.jpeg")}
               alt="Minishell Unix shell project visual"
               fill
               priority

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { TechnologyTag } from "@/components/projects/TechnologyTag";
+import { publicPath } from "@/config/paths";
 
 const technologies = ["C++", "HTTP", "CGI", "Networking"];
 
@@ -62,7 +63,7 @@ export function WebservHero() {
         >
           <div className="relative aspect-[4/3] overflow-hidden rounded-[8px] border border-white/[0.1] bg-[#080f15] p-3 shadow-[0_20px_70px_rgba(0,0,0,0.22)] sm:p-5">
             <Image
-              src="/images/projects/webserv-cover.jpeg"
+              src={publicPath("/images/projects/webserv-cover.jpeg")}
               alt="Webserv HTTP server project visual"
               fill
               priority

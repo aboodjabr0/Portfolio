@@ -1,3 +1,5 @@
+import { publicPath } from "@/config/paths";
+
 export type Project = {
   number: string;
   slug: string;
@@ -45,16 +47,16 @@ export const projects: Project[] = [
       "A production gym management platform for memberships, training, nutrition, bookings, check-ins, and day-to-day gym operations.",
     technologies: ["Flutter", "ASP.NET Core", "PostgreSQL"],
     contributions: ["Backend Architecture", "Backend Development", "UI/UX Design"],
-    image: "/images/projects/tempo-cover.webp",
+    image: publicPath("/images/projects/tempo-cover.webp"),
     github: null,
     live: "https://tempo.optech.software",
     featured: true,
     group: "major",
     caseStudy: {
-      logo: "/images/projects/tempo/tempo-logo.svg",
+      logo: publicPath("/images/projects/tempo/tempo-logo.svg"),
       subtitle: "Gym Management Platform",
-      primaryImage: "/images/projects/tempo/tempo-mobile-workout.webp",
-      secondaryImage: "/images/projects/tempo/tempo-mobile.webp",
+      primaryImage: publicPath("/images/projects/tempo/tempo-mobile-workout.webp"),
+      secondaryImage: publicPath("/images/projects/tempo/tempo-mobile.webp"),
       description:
         "A production gym management platform that brings memberships, training, nutrition, bookings, check-ins, and day-to-day gym operations into one connected experience.",
       overview:
@@ -77,7 +79,7 @@ export const projects: Project[] = [
       "A bilingual clinic-management platform for patients, appointments, visits, billing, reporting, permissions, and day-to-day clinic operations.",
     technologies: ["React", "TypeScript", "Vite", "ASP.NET Core", "PostgreSQL"],
     contributions: [],
-    image: "/images/projects/clinora-dark.png",
+    image: publicPath("/images/projects/clinora-dark.png"),
     github: "https://github.com/aboodjabr0/clinic-flow",
     live: null,
     featured: false,
@@ -99,7 +101,7 @@ export const projects: Project[] = [
       "An interactive bilingual campus kiosk where users explore a pixel-art vocational campus, select destinations, and watch a character navigate to buildings using A* pathfinding before entering interactive program-information hubs.",
     technologies: ["React", "TypeScript", "Vite", "A* Pathfinding"],
     contributions: [],
-    image: "/images/projects/CAVT_hackathon.webp",
+    image: publicPath("/images/projects/CAVT_hackathon.webp"),
     github: null,
     live: "https://thriving-cat-177f0d.netlify.app/",
     featured: false,
@@ -119,7 +121,7 @@ export const projects: Project[] = [
       "A configurable HTTP server built from scratch in C++, implementing request routing, response handling, CGI execution, and server configuration without relying on an existing web-server framework.",
     technologies: ["C++", "HTTP", "CGI", "Networking"],
     contributions: ["Configuration", "Routing", "Request Handlers", "CGI"],
-    image: "/images/projects/webserv-cover.jpeg",
+    image: publicPath("/images/projects/webserv-cover.jpeg"),
     github: "https://github.com/aboodjabr0/webserve",
     live: null,
     featured: true,
@@ -138,7 +140,7 @@ export const projects: Project[] = [
       "A Unix shell built from scratch in C, supporting command execution, pipes, redirections, environment expansion, signals, heredocs, and built-in commands.",
     technologies: ["C", "Unix", "Processes", "Shell"],
     contributions: ["Parsing", "Execution"],
-    image: "/images/projects/minishell-cover.jpeg",
+    image: publicPath("/images/projects/minishell-cover.jpeg"),
     github: "https://github.com/aboodjabr0/minishell",
     live: null,
     featured: true,

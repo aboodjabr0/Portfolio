@@ -24,6 +24,7 @@ import {
   X,
 } from "lucide-react";
 import { TechnologyTag } from "@/components/projects/TechnologyTag";
+import { publicPath } from "@/config/paths";
 
 const stackGroups = [
   { label: "Frontend", items: ["React 19", "TypeScript", "Vite"], icon: Globe2 },
@@ -120,7 +121,7 @@ export function ClinoraOverview() {
           <Reveal delay={0.08} className="mx-auto w-full max-w-[680px]">
             <div className="relative overflow-hidden rounded-[8px] border border-white/[0.1] bg-[#080f15] p-3 shadow-[0_20px_70px_rgba(0,0,0,0.24)] sm:p-5">
               <div className="relative aspect-[16/7] overflow-hidden rounded-[4px] border border-white/[0.08]">
-                <Image src="/images/projects/clinora-dark.png" alt="Clinora project cover" fill priority sizes="(max-width: 1023px) 90vw, 620px" className="object-contain" />
+                <Image src={publicPath("/images/projects/clinora-dark.png")} alt="Clinora project cover" fill priority sizes="(max-width: 1023px) 90vw, 620px" className="object-contain" />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#070b0e]/40 via-transparent to-[#070b0e]/5" />
               </div>
               <div className="mt-4 flex items-center justify-between gap-4 px-1">
