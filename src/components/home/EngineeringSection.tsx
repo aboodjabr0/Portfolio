@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Database, Server, Smartphone, Terminal, type LucideIcon } from "lucide-react";
+import { ArrowRight, Database, Server, Terminal, type LucideIcon } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
 type EngineeringArea = {
@@ -24,14 +24,6 @@ const engineeringAreas: EngineeringArea[] = [
   },
   {
     number: "02",
-    title: "Mobile & Product",
-    description: "Building member-facing mobile experiences while contributing to product structure and interface design.",
-    icon: Smartphone,
-    capabilities: ["Flutter", "Mobile Application Development", "UI/UX Design", "Product Workflows"],
-    projects: [{ name: "Tempo", href: "/projects/tempo" }],
-  },
-  {
-    number: "03",
     title: "Systems Programming",
     description: "Working closer to the operating system through processes, networking, parsing, and protocol-level behavior.",
     icon: Terminal,
@@ -42,7 +34,7 @@ const engineeringAreas: EngineeringArea[] = [
     ],
   },
   {
-    number: "04",
+    number: "03",
     title: "Data & Infrastructure",
     description: "Working with relational application data and supporting infrastructure used by production software.",
     icon: Database,
@@ -69,7 +61,7 @@ export function EngineeringSection() {
             What I Work With
           </h2>
           <p className="mt-5 max-w-[680px] text-[15px] leading-[1.75] text-[#9aa8b6]">
-            From production backend systems to low-level Unix programming, my work spans application architecture, data, mobile products, and systems engineering.
+            From production backend systems to low-level Unix programming, my work spans application architecture, data, and systems engineering.
           </p>
         </motion.div>
 

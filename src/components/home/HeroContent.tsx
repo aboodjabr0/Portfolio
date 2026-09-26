@@ -48,7 +48,9 @@ export function HeroContent() {
           <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" strokeWidth={2} />
         </a>
         <a
-          href="#resume"
+          href="/Abdullah%20Sauafth%20CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex h-10 items-center gap-2 rounded-[6px] border border-white/[0.16] bg-white/[0.015] px-4 text-[12px] font-medium text-[#d7e0e9] transition-all hover:border-white/[0.3] hover:bg-white/[0.05] hover:text-white"
         >
           Resume

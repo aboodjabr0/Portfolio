@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Code2 } from "lucide-react";
+import { ArrowUpRight, Code2, Mail, MessageCircle } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
 export function CallToActionSection() {
@@ -30,15 +30,18 @@ export function CallToActionSection() {
             Want to see how I think?
           </h2>
           <p className="mx-auto mt-5 max-w-[590px] text-[14px] leading-[1.75] text-[#9aa8b6] sm:text-[15px]">
-            Have a technical challenge, product idea, or engineering problem? Send it over and let&apos;s talk through how I&apos;d approach it.
+            Have a technical challenge, product idea, or engineering problem? Choose how you&apos;d like to send it.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="#contact" className="group inline-flex h-10 items-center justify-center gap-2 rounded-[6px] bg-accent px-4 text-[12px] font-semibold text-white shadow-button transition-all hover:bg-[#4699ff] hover:shadow-[0_10px_34px_rgba(47,140,255,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-              Send Me a Challenge
-              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" strokeWidth={2} aria-hidden="true" />
+            <a href="https://wa.me/962777260633" target="_blank" rel="noopener noreferrer" className="group inline-flex h-10 items-center justify-center gap-2 rounded-[6px] bg-accent px-4 text-[12px] font-semibold text-white shadow-button transition-all hover:bg-[#4699ff] hover:shadow-[0_10px_34px_rgba(47,140,255,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+              <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+              Send via WhatsApp
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={2} aria-hidden="true" />
             </a>
-            <a href="#contact" className="inline-flex h-10 items-center justify-center rounded-[6px] border border-white/[0.16] bg-white/[0.015] px-4 text-[12px] font-medium text-[#d7e0e9] transition-all hover:border-white/[0.3] hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-              Let&apos;s Talk
+            <a href="mailto:abdullahsauafth@gmail.com" className="group inline-flex h-10 items-center justify-center gap-2 rounded-[6px] border border-white/[0.16] bg-white/[0.015] px-4 text-[12px] font-medium text-[#d7e0e9] transition-all hover:border-white/[0.3] hover:bg-white/[0.05] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+              <Mail className="h-3.5 w-3.5" aria-hidden="true" />
+              Send via email
+              <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" strokeWidth={1.8} aria-hidden="true" />
             </a>
           </div>
         </div>

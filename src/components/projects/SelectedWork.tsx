@@ -30,7 +30,7 @@ export function SelectedWork() {
             <p className="mt-3 text-[14px] text-[#8b9aaa]">Real projects. Real engineering.</p>
           </div>
 
-          <Link href="/projects" className="group/all inline-flex items-center gap-1.5 pb-1 text-[11px] font-medium text-[#aab8c6] transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+          <Link href="/projects" className="group/all inline-flex min-h-10 items-center gap-2 self-start rounded-[6px] bg-accent px-4 text-[12px] font-semibold text-white shadow-button transition-all hover:-translate-y-0.5 hover:bg-[#4699ff] hover:shadow-[0_10px_34px_rgba(47,140,255,0.26)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent sm:self-auto">
             View all projects
             <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/all:translate-x-0.5" aria-hidden="true" />
           </Link>
